@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Roses magazine</title>
-    <link rel="stylesheet" href="stylereset.css">
+<link rel="stylesheet" href="stylereset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,28 +11,48 @@
         <div class="header">
            <div class="wrap">
             <div class="logo"><img src="img/title.png"></div>
-            <div class="head_text">Roses is a clean, modern Wordpress theme perfect for magazine blogs or personal blogs.
+            <div class="head_text"><span>Roses</span> is a clean, modern Wordpress theme perfect for magazine blogs or personal blogs.
 Happy blogging!</div>
             <div class="nav">
                 <ul>
-                    <li>HOME</li>
-                    <li>CONTACT US</li>
-                    <li>SHORTCODES</li>
-                    <li>OPTIONS</li>
-                    <li>WIDGETS</li>
-                    <li>PAGES</li>
-                    <li>BLOG</li>
+                    <li ><a href="#">HOME</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">SHORTCODES</a></li>
+                    <li><a href="#">OPTIONS</a></li>
+                    <li><a href="#">WIDGETS</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">BLOG</a></li>
                 </ul>
             </div>
         </div>
         </div>
-        <div class="slider"><div class="wrap">
-            <div class="sl_img"><img src="" alt=""></div>
-            <div class="points"></div>
-            <div class="sl_text"></div>
-            <div class="arr_prev"><img src="" alt=""></div>
-            <div class="arr_next"><img src="" alt="">    </div>
-        </div></div>
+        <div class="slider_wrap">
+           <div class="wrap">
+                    <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
+                    <input type="radio" name="point" id="slide4">
+                    <input type="radio" name="point" id="slide5">
+            <div class="slider">
+                <div class="slides slide1"></div>
+                <div class="slides slide2"></div>
+                <div class="slides slide3"></div>
+                <div class="slides slide4"></div>
+                <div class="slides slide5"></div>
+            </div>
+            <div class="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur quam augue, vehicula quis, tincidunt vel, varius vitae, nulla. Sed convallis orci.</p>
+            <div class="arr_prev"><img src="img/arrow_prev.png"></div>
+            <div class="arr_next"><img src="img/arrow_next.png">    </div>
+        </div>
+
+        </div>
         <div class="posts">
             <div class="wrap">
                 <div class="block">
@@ -69,8 +89,8 @@ Happy blogging!</div>
                 </div></div>
                 <div class="block"></div>
                 <div class="block"></div>
-                <div class=""></div>
-            </div>page_count
+                <div class="page_count"></div>
+            </div>
         </div>
         <div class="sidebar"><div class="wrap"></div></div>
         <div class="footer"><div class="wrap"></div></div>

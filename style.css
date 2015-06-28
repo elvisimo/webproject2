@@ -1,0 +1,204 @@
+@font-face {
+    src: url(fonts/Ubuntu-R.ttf);
+    font-family: 'Ubuntu-Regular';
+}
+.wrapper{
+    overflow: hidden;
+    font-family: 'Ubuntu-Regular';
+    background-image: url(img/background.jpg);
+    height: 100%;
+    width: 100%;
+}
+a {
+text-decoration: none;
+}
+.wrap {
+    width: 1020px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    height: 130px;
+    background-color: #f0f0f0;
+    border: 2px solid #dfdfdf;
+}
+
+.header .logo {
+    float: left;
+    margin-right: 65px;
+    margin-top: 40px;
+}
+
+.header .head_text {
+    color: #818080;
+    font-size: 15px;
+    width: 310px;
+    margin-right: 130px;
+    display: inline-block;
+    margin-top: 40px;
+}
+.header .head_text span{
+    color: #ac4052;
+}
+
+.header .nav {
+    width: 420px;
+    margin-top: 40px;
+    float: right;
+}
+.header li {
+    display: inline-block;
+    color: #818080;
+    font-size: 14px;
+    padding-right: 30px;
+    clear:both;
+}
+.header li:nth-child(5){
+    padding-right: 0px;
+    padding-right: 12px;
+}
+.header li:nth-child(6){
+    padding-right: 0px;
+    padding-right: 70px;
+}
+.header li a{
+    color: #818080;
+}
+.header li a:hover {
+ color: #ac4052;
+}
+
+.header li a:actve{
+ color: #ac4052;
+}
+
+/*SLIDER*/
+.slider_wrap{
+    height: 418px;
+}
+.slider {
+    margin-top:55px;
+    margin-left: 60px;
+    background-color: #ddd;
+    height: 225px;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .5);
+}
+.wrap > input {
+display:none;
+}
+.slides {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+}
+
+.slide1 { background-image: url(img/roses_slider.png); }
+.slide2 { background-image: url(img/34775-cover.jpg); }
+.slide3 { background-image: url(img/nature-landscapes_hdwallpaper_pink-rose_1101.jpg); }
+.slide4 { background-image: url(img/pink-backgrounds-wallpapers-desktop-roses-autumn-wallpaper.jpg); }
+.slide5 { background-image: url(img/Rose%20Designers%20Selection.jpg); }
+
+.slider_wrap .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+}
+
+.slider_wrap label {
+    background-color: #b0b0b0;
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    margin-top: 33px;
+    margin-left:9px;
+    position: relative;
+    width: 14px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+}
+
+.slider_wrap label:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+    background: #930018;
+}
+.slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.arr_prev {
+    float: left;
+    margin-top: -220px;
+    opacity: 0.6;
+}
+
+.arr_next {
+    float: right;
+    margin-top: -220px;
+    opacity: 0.6;
+}
+.arr_prev:hover {
+    opacity: 1;
+}
+
+.arr_next:hover {
+    opacity: 1;
+}
+
+p.text {
+    color: #5d5c5c;
+    padding: 80px 50px 0px 60px;
+    font-size: 20px;
+    text-align: center;
+}
